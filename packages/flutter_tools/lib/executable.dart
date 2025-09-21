@@ -35,6 +35,7 @@ import 'src/commands/ide_config.dart';
 import 'src/commands/install.dart';
 import 'src/commands/logs.dart';
 import 'src/commands/packages.dart';
+import 'src/commands/pkg.dart';
 import 'src/commands/precache.dart';
 import 'src/commands/run.dart';
 import 'src/commands/screenshot.dart';
@@ -236,6 +237,7 @@ List<FlutterCommand> generateCommands({required bool verboseHelp, required bool 
       InstallCommand(verboseHelp: verboseHelp),
       LogsCommand(sigint: ProcessSignal.sigint, sigterm: ProcessSignal.sigterm),
       PackagesCommand(),
+      PkgCommand(),
       PrecacheCommand(
         verboseHelp: verboseHelp,
         cache: globals.cache,
