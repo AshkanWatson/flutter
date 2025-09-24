@@ -10,7 +10,7 @@ import '../cache.dart';
 import '../globals.dart' as globals;
 import '../runner/flutter_command.dart';
 
-// The main flutter pkg command.
+/// The main flutter pkg command.
 class PkgCommand extends FlutterCommand {
   PkgCommand() {
     addSubcommand(PkgInstallCommand());
@@ -35,7 +35,7 @@ class PkgCommand extends FlutterCommand {
   }
 }
 
-// Installs a package globally into ~/.flutter-pkg
+/// Installs a package globally into ~/.flutter-pkg
 class PkgInstallCommand extends FlutterCommand {
   @override
   final name = 'install';
@@ -238,7 +238,7 @@ dependencies:
   }
 }
 
-// Uninstalls a globally installed package.
+/// Uninstalls a globally installed package.
 class PkgUninstallCommand extends FlutterCommand {
   PkgUninstallCommand() {
     argParser.addFlag(
@@ -320,7 +320,7 @@ class PkgUninstallCommand extends FlutterCommand {
   }
 }
 
-// Upgrades all globally installed packages.
+/// Upgrades all globally installed packages.
 class PkgUpgradeCommand extends FlutterCommand {
   @override
   final name = 'upgrade';
